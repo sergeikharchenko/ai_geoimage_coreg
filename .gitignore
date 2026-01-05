@@ -1,0 +1,28 @@
+# Python compilations
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE settings
+.idea/
+.vscode/
+
+# Local data & Models (НЕ грузим тиффы и веса)
+*.tif
+*.tiff
+*.jpg
+*.png
+*.npz
+*.pth
+
+# SuperGlue repo (пользователь должен скачать его сам или вы используете submodule, но лучше игнорировать локальную копию)
+SuperGluePretrainedNetwork/
+
+# Environment variables
+.env
