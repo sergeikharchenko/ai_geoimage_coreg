@@ -138,7 +138,7 @@ def run_pipeline(path_hex, path_ref, algorithm='loftr', output_prefix='result',
     print("Done.")
 
 def main_cli():
-    parser = argparse.ArgumentParser(description="Geobind: AI Georeferencing Tool")
+    parser = argparse.ArgumentParser(description="AI-GeoImage-Coreg: AI Georeferencing Tool")
     
     # Обязательные пути
     parser.add_argument('--input', required=True, help='Path to unreferenced image (Hexagon)')
