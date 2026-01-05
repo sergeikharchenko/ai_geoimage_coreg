@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="geobind",
+    name="ai_geoimage_coreg",
     version="0.1.0",
     description="Automated Georeferencing using LoFTR and SuperPoint+SuperGlue",
-    author="Your Name",
+    author="Sergei Kharchenko",
     packages=find_packages(),
     install_requires=[
         "torch>=1.10",
@@ -21,7 +21,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'geobind=geobind.core:main_cli',
+            'ai_geoimage_coreg=ai_geoimage_coreg.core:main_cli',
         ],
     },
 )
