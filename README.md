@@ -72,7 +72,7 @@ To get the best results, you need a good **Reference Image**.
 Run the tool from the command line:
 
 ```bash
-geobind --input /path/to/raw_hexagon.tif --ref /path/to/reference_map.tif --output result_name
+ai_geoimage_coreg --input /path/to/raw_hexagon.tif --ref /path/to/reference_map.tif --output result_name
 ```
 
 ### Arguments
@@ -94,19 +94,19 @@ geobind --input /path/to/raw_hexagon.tif --ref /path/to/reference_map.tif --outp
 
 **1. Standard run (recommended for most cases):**
 ```bash
-geobind --input KH9_strip.tif --ref modern_map.tif
+ai_geoimage_coreg --input KH9_strip.tif --ref modern_map.tif
 ```
 
 **2. High Precision (slower):**
 Use a smaller step to find more points and a finer grid for better distribution. Good for detailed urban areas.
 ```bash
-geobind --input KH9.tif --ref modern.tif --step-size 200 --grid 50
+ai_geoimage_coreg --input KH9.tif --ref modern.tif --step-size 200 --grid 50
 ```
 
 **3. Difficult Terrain (Mountains/Distortion):**
 If valid points are being deleted because the image is very warped (panoramic distortion), increase the RANSAC threshold.
 ```bash
-geobind --input KH9.tif --ref modern.tif --ransac 1000.0
+ai_geoimage_coreg --input KH9.tif --ref modern.tif --ransac 1000.0
 ```
 ---
 
