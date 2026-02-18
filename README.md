@@ -2,6 +2,8 @@
 
 **A Python package for automated georeferencing of historical satellite imagery (e.g., Hexagon KH-9) using Deep Learning.**
 
+[![Run in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sergeikharchenko/ai_geoimage_coreg/blob/main/examples/default_coreg_colab.ipynb)
+
 This tool uses state-of-the-art feature matching algorithms (**LoFTR** and **SuperPoint+SuperGlue**) to find corresponding points between a raw, unreferenced image and a modern georeferenced map. It then automatically warps the raw image using Polynomial or Thin Plate Spline (TPS) transformations.
 
 ## Features
